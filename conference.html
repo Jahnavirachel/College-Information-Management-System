@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>conference</title>
+    </head>
+    <body>
+        <h1>Conference</h1>
+        <form action="conference.php" method="post">
+
+            <label for="title">Title : </label>
+            <input type="text" name="title">
+            <br></br>
+            <label for="conference">Conference : </label>
+            <input type="text" name="conference">
+            <br></br>
+            <label for="date">Date : </label>
+            <input type="date" name="date">
+            <br></br>
+            <label for="conducted_by">Conducted by : </label>
+            <input type="text" name="conducted_by">
+            <br></br>
+            <label for="presented">Presented : </label>
+            <input type="radio" name="presented">Yes
+            <input type="radio" name="presented">No 
+            <br></br>
+            <label for="pres_publ">Presented and Published : </label>
+            <input type="radio" name="pres_publ">Yes
+            <input type="radio" name="pres_publ">No 
+            <br></br>
+
+            <input type="submit" name="insert" value="SUBMIT">
+        
+        </form>
+    </body>
+</html>

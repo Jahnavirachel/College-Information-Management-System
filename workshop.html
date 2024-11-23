@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+			
+<?php
+include("workshop.php");
+?>
+<html lang="en">
+    <head>
+        <title>workshop</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    </head>
+    
+    <style>
+        label {
+            width: 25%;
+            float: left
+            
+        }
+        input{
+            width: 25%;
+            float: left
+        }
+        </style>
+    <body>
+        <h1 align="center">WorkShop</h1>
+     <form align="center" action="workshop.php"  method="post">
+        <label for="id">ID : </label>
+        <input type="text" name="id">
+        <br></br>
+        <label for="name">Name : </label>
+        <input type="text" name="name">
+        <br></br>
+        <label for="dept">Department : </label>
+        <input type="text" name="dept">
+        <br></br>
+        <label for="title_workshop">Name of the Workshop : </label>
+        <input type="text" name="title_workshop">
+        <br></br>
+        <label for="type_workshop">Type of the Workshop : </label>
+        <select id="type_workshop" name="type_workshop">
+            <option value=""> </option>
+            <option value="training">Training</option>
+            <option value="FDP">FDP</option>
+            <option value="Seminar">Seminar</option>
+        </select>
+        <br></br>
+        <label for="duration">Duration : </label>
+        <input type="time" name="duration">
+        <br></br>
+        <label for="from_date">From date : </label>
+        <input type="date" name="from_date">
+        <br></br>
+        <label for="to_date">To date : </label>
+        <input type="date" name="to_date">
+        <br></br>
+        <label for="organization">Conducted by : </label>
+        <input type="text" name="organization">
+        <br></br>
+         
+
+        <input type="submit" name="insert" value="SUBMIT">
+     </form>
+     <br></br>
+     
+     
+     
+     <script>window.location = 'workshop.html'</script>
+     
+     
+    
+     
+
+
+    </body>
+</html>
